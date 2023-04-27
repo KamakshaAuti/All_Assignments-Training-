@@ -1,0 +1,13 @@
+﻿@model MVCApplicationDay3.Models.User
+
+@using (Html.BeginForm("SaveUser", "Home"))
+{
+    @Html.TextBoxFor(user => user.UserName)
+    @Html.PasswordFor(user => user.Password)
+    
+
+    <input type="submit" value="Add User" />
+}
+
+<h2>AddUser</h2>
+

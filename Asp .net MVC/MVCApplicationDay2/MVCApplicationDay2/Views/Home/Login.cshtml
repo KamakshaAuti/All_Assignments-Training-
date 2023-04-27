@@ -1,0 +1,11 @@
+﻿@Html.Partial("MenuWidget")
+@{
+    ViewBag.Title = "Login";
+}
+<h1>This view was rendered at: @DateTime.Now.ToString()</h1>
+@{ for (int i = 1; i < 2 ; i++)
+    {
+        <h2>Iteration: @i, Current Date and Time is: @DateTime.Now.ToString()</h2>
+    }
+}
+
